@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		63E077F92BE782C800E36B8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E077F82BE782C800E36B8B /* AppDelegate.swift */; };
 		63E077FB2BE782C800E36B8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E077FA2BE782C800E36B8B /* SceneDelegate.swift */; };
-		63E077FD2BE782C800E36B8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E077FC2BE782C800E36B8B /* ViewController.swift */; };
-		63E078002BE782C800E36B8B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 63E077FF2BE782C800E36B8B /* Base */; };
+		63E077FD2BE782C800E36B8B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E077FC2BE782C800E36B8B /* TabBarController.swift */; };
 		63E078022BE782C900E36B8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E078012BE782C900E36B8B /* Assets.xcassets */; };
 		63E078052BE782C900E36B8B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 63E078042BE782C900E36B8B /* Base */; };
+		63E0780E2BE7834400E36B8B /* BFBoardgame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0780D2BE7834400E36B8B /* BFBoardgame.swift */; };
+		63E078102BE78BB000E36B8B /* BFAllBoardames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0780F2BE78BB000E36B8B /* BFAllBoardames.swift */; };
+		63E078142BE78E1700E36B8B /* BoardgamesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E078132BE78E1700E36B8B /* BoardgamesListVC.swift */; };
+		63E078162BE78F2000E36B8B /* FavoritesBoardgamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E078152BE78F2000E36B8B /* FavoritesBoardgamesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63E077F52BE782C800E36B8B /* boardify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boardify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E077F82BE782C800E36B8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E077FA2BE782C800E36B8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		63E077FC2BE782C800E36B8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		63E077FF2BE782C800E36B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63E077FC2BE782C800E36B8B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		63E078012BE782C900E36B8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63E078042BE782C900E36B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63E078062BE782C900E36B8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E0780D2BE7834400E36B8B /* BFBoardgame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFBoardgame.swift; sourceTree = "<group>"; };
+		63E0780F2BE78BB000E36B8B /* BFAllBoardames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFAllBoardames.swift; sourceTree = "<group>"; };
+		63E078132BE78E1700E36B8B /* BoardgamesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardgamesListVC.swift; sourceTree = "<group>"; };
+		63E078152BE78F2000E36B8B /* FavoritesBoardgamesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesBoardgamesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		63E077F72BE782C800E36B8B /* boardify */ = {
 			isa = PBXGroup;
 			children = (
-				63E077F82BE782C800E36B8B /* AppDelegate.swift */,
-				63E077FA2BE782C800E36B8B /* SceneDelegate.swift */,
-				63E077FC2BE782C800E36B8B /* ViewController.swift */,
-				63E077FE2BE782C800E36B8B /* Main.storyboard */,
-				63E078012BE782C900E36B8B /* Assets.xcassets */,
-				63E078032BE782C900E36B8B /* LaunchScreen.storyboard */,
+				63E078122BE78DC800E36B8B /* Controllers */,
+				63E078112BE78D2800E36B8B /* Resources */,
+				63E0780C2BE7833400E36B8B /* Models */,
 				63E078062BE782C900E36B8B /* Info.plist */,
 			);
 			path = boardify;
+			sourceTree = "<group>";
+		};
+		63E0780C2BE7833400E36B8B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				63E0780D2BE7834400E36B8B /* BFBoardgame.swift */,
+				63E0780F2BE78BB000E36B8B /* BFAllBoardames.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		63E078112BE78D2800E36B8B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63E077FA2BE782C800E36B8B /* SceneDelegate.swift */,
+				63E077F82BE782C800E36B8B /* AppDelegate.swift */,
+				63E078032BE782C900E36B8B /* LaunchScreen.storyboard */,
+				63E078012BE782C900E36B8B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		63E078122BE78DC800E36B8B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				63E077FC2BE782C800E36B8B /* TabBarController.swift */,
+				63E078132BE78E1700E36B8B /* BoardgamesListVC.swift */,
+				63E078152BE78F2000E36B8B /* FavoritesBoardgamesVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +160,6 @@
 			files = (
 				63E078022BE782C900E36B8B /* Assets.xcassets in Resources */,
 				63E078052BE782C900E36B8B /* Base in Resources */,
-				63E078002BE782C800E36B8B /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +170,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63E077FD2BE782C800E36B8B /* ViewController.swift in Sources */,
+				63E0780E2BE7834400E36B8B /* BFBoardgame.swift in Sources */,
+				63E078102BE78BB000E36B8B /* BFAllBoardames.swift in Sources */,
+				63E078162BE78F2000E36B8B /* FavoritesBoardgamesVC.swift in Sources */,
+				63E077FD2BE782C800E36B8B /* TabBarController.swift in Sources */,
 				63E077F92BE782C800E36B8B /* AppDelegate.swift in Sources */,
 				63E077FB2BE782C800E36B8B /* SceneDelegate.swift in Sources */,
+				63E078142BE78E1700E36B8B /* BoardgamesListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		63E077FE2BE782C800E36B8B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63E077FF2BE782C800E36B8B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		63E078032BE782C900E36B8B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +325,8 @@
 				INFOPLIST_FILE = boardify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +354,8 @@
 				INFOPLIST_FILE = boardify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
